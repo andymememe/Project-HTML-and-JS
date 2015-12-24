@@ -1,0 +1,14 @@
+body
+{
+	background-image : url("../res/bg.gif") ;
+}
+
+header
+{
+	margin-left : 31% ;
+	width : 38% ;
+	font-family : 'Oswald', sans-serif ;
+	border-radius : 25px ;
+	border : 5px solid black ;
+	background : #8AC007 ;
+}

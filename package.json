@@ -1,0 +1,24 @@
+{
+  "name": "project-html-n-js",
+  "version": "1.0.0",
+  "description": "A Collection of HTML & JavaScript Created By andymememe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/andymememe/Project-HTML-and-JS.git"
+  },
+  "keywords": [
+    "html",
+    "js",
+    "collection"
+  ],
+  "author": "Andymememe",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/andymememe/Project-HTML-and-JS/issues"
+  },
+  "homepage": "https://github.com/andymememe/Project-HTML-and-JS#readme"
+}
