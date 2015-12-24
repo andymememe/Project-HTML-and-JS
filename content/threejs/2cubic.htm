@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>My first Three.js app</title>
+		<style>body {margin : 0 ;} canvas {width : 100% ; height : 100% ;}</style>
+		<script src="js/three.min.js"></script>
+	</head>
+	<body>
+		<script>
+			/* Create Scene and Camera */
+			var scene = new THREE.Scene () ;
+			var camera = new THREE.PerspectiveCamera (45, window.innerWidth / window.innerHeight, 1, 1000) ;
+			
+			/* Create Renderer and Canvas */
+			var renderer = new THREE.WebGLRenderer () ;
+			renderer.setSize (window.innerWidth, window.innerHeight) ;
+			document.body.appendChild (renderer.domElement) ;
+			
+			/* Create a 3D object */
+			var geometry = new THREE.BoxGeometry (20, 20, 20) ;
+			
+			/* Cube with shadow */
+			var material = new THREE.MeshLambertMaterial ({color : 0xff00ff}) ; // Create color material
+			var cube1 = new THREE.Mesh (geometry, material) ; // Combine and object and material and create the cube
+			cube1.overdraw = true ;
+			scene.add (cube1) ;
+			cube1.position.x = -30 ;
+			
+			/* Cube without shadow */
+			var material = new THREE.MeshBasicMaterial ({color : 0xff00ff}) ; // Create color material
+			var cube2 = new THREE.Mesh (geometry, material) ; // Combine and object and material and create the cube
+			cube2.overdraw = true ;
+			scene.add (cube2) ;
+			cube2.position.x = 10 ;
+			
+			/* Light */
+			var light = new THREE.DirectionalLight ( 0xffffff, 1) ;
+			light.position.set ( 1, 1, 1).normalize () ;
+			scene.add (light) ;
+			
+			camera.position.z = 100 ;
+			
+			/* Render loop */
+			function render ()
+			{
+				requestAnimationFrame (render) ; // Create loop : 60fps
+				
+				cube1.rotation.x += 0.01 ;
+				cube1.rotation.y += 0.01;
+				
+				cube2.rotation.x += 0.01 ;
+				cube2.rotation.y += 0.01;
+				
+				renderer.render (scene, camera) ; // Render scene and camera
+			}
+			render() ;
+		</script>
+	</body>
+</html>

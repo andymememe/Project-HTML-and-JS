@@ -1,14 +1,62 @@
 body
 {
 	background-image : url("../res/bg.gif") ;
+	font-family : 'Oswald', sans-serif ;
+}
+
+.box
+{
+	border-radius : 25px ;
+	border : 5px solid black ;
+	width : 38% ;
+	margin-left : 31% ;
+	text-align : center ;
 }
 
 header
 {
-	margin-left : 31% ;
-	width : 38% ;
-	font-family : 'Oswald', sans-serif ;
-	border-radius : 25px ;
-	border : 5px solid black ;
+	text-align : center ;
+}
+
+header#title
+{
 	background : #8AC007 ;
+}
+
+section
+{
+	margin-top : 20px ;
+}
+
+.link-box
+{
+	background : white ;
+}
+
+.item
+{
+	text-align : center ;
+	font-size : 18px ;
+}
+
+.item:last-child
+{
+	margin-bottom : 10px ;
+}
+
+a:link
+{
+	color : #17B ;
+	text-decoration : none ;
+}
+
+a:visited
+{
+	color : green ;
+	text-decoration : none ;
+}
+
+a:hover
+{
+	text-decoration : underline ;
 }

@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/andymememe/Project-HTML-and-JS/issues"
   },
-  "homepage": "https://github.com/andymememe/Project-HTML-and-JS#readme"
+  "homepage": "https://github.com/andymememe/Project-HTML-and-JS#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "three.js": "^0.73.0"
+  }
 }
