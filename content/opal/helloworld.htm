@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://cdn.opalrb.org/opal/current/opal.js"></script>
+    <script src="http://cdn.opalrb.org/opal/current/opal-parser.js"></script>
+    <script type="text/javascript">
+      Opal.load('opal-parser')
+    </script>
+  </head>
+  <body>
+    <div id="title"><h1></h1></div>
+    <script type="text/ruby">
+      title  = `document.getElementById('title').firstElementChild`
+      nowTime = Time.now
+      nowTimeStr = nowTime.inspect
+      `#{title}.innerHTML = 'Hello World -- Insert by Ruby code (' + #{nowTimeStr} + ')'`
+    </script>
+  </body>
+</html>
