@@ -1,6 +1,6 @@
 body
 {
-	background-image : url("../res/bg.gif") ;
+	background-image : url("../res/images/bg.gif") ;
 	font-family : 'Oswald', sans-serif ;
 }
 
@@ -41,7 +41,7 @@ section
 
 .item:last-child
 {
-	margin-bottom : 10px ;
+	margin-bottom : 2px ;
 }
 
 a:link
