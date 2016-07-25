@@ -1,13 +1,13 @@
-var express = require("express") ;
-var app     = express() ;
-var path    = require("path") ;
+var express = require("express");
+var app = express();
+var path = require("path");
 
 /* Needed Folder */
-app.use("/", express.static(__dirname + '/content')) ;
-app.use("/css", express.static(__dirname + '/css')) ;
-app.use("/res", express.static(__dirname + '/res')) ;
+app.use("/", express.static(__dirname + '/content'));
+app.use("/css", express.static(__dirname + '/css'));
+app.use("/res", express.static(__dirname + '/res'));
 
 /* Local JS Requirement */
-app.use("/threejs/js", express.static(__dirname + '/node_modules/three.js/build')) ;
+app.use("/threejs/js", express.static(__dirname + '/node_modules/three.js/build'));
 
-app.listen(3000) ;
+app.listen(3000);

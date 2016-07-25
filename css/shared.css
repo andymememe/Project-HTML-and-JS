@@ -1,62 +1,68 @@
 body
 {
-	background-image : url("../res/images/bg.gif") ;
-	font-family : 'Oswald', sans-serif ;
+    font-family: 'Oswald', sans-serif ;
+
+    background-image: url('../res/images/bg.gif') ;
 }
 
 .box
 {
-	border-radius : 25px ;
-	border : 5px solid black ;
-	width : 38% ;
-	margin-left : 31% ;
-	text-align : center ;
+    width: 38% ;
+    margin-left: 31% ;
+
+    text-align: center ;
+
+    border: 5px solid black ;
+    border-radius: 25px ;
 }
 
 header
 {
-	text-align : center ;
+    text-align: center ;
 }
 
 header#title
 {
-	background : #8AC007 ;
+    background: #8ac007 ;
 }
 
 section
 {
-	margin-top : 20px ;
+    margin-top: 20px ;
 }
 
 .link-box
 {
-	background : white ;
+    background: white ;
 }
 
 .item
 {
-	text-align : center ;
-	font-size : 18px ;
+    font-size: 18px ;
+
+    text-align: center ;
 }
 
 .item:last-child
 {
-	margin-bottom : 2px ;
+    margin-bottom: 2px ;
 }
 
 a:link
 {
-	color : #17B ;
-	text-decoration : none ;
+    text-decoration: none ;
+
+    color: #17b ;
 }
 
 a:visited
 {
-	color : green ;
-	text-decoration : none ;
+    text-decoration: none ;
+
+    color: green ;
 }
 
 a:hover
 {
-	text-decoration : underline ;
+    text-decoration: underline ;
 }
